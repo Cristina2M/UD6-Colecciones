@@ -10,20 +10,20 @@ import java.util.HashSet;
  
          // Pedimos que escriban 5 números diferentes
          System.out.println("Ingresa 5 números diferentes:");
-         while (numeros.size() < 5) {
-             System.out.print("Número " + (numeros.size() + 1) + ": ");
+         while (numeros.size() < 5) { // bucle que se repite hasta que el size sea 4 (el primer valor esta en la posicion 0)
+             System.out.print("Número " + (numeros.size() + 1) + ": "); // como empieza por el 0, le sumo 1
              int numero = entrada.nextInt();
-             if (numeros.contains(numero)) {
+             if (numeros.contains(numero)) { // compruebo que el número no se repita, y si se repite le pido otro
                  System.out.println("Ese número ya lo has escrito. Ingresa otro.");
-             } else {
+             } else { // si no está repetido añado el número
                  numeros.add(numero);
              }
          }
  
          // Calculamos la suma de los números
          int suma = 0;
-         for (int numero : numeros) {
-             suma += numero;
+         for (int numero : numeros) { // recorro el hashset cogiendo cada valor dentro de numeros
+             suma += numero; // lo mismo que suma=suma+numero, pero de forma abreviada
          }
  
          // Mostramos la suma
