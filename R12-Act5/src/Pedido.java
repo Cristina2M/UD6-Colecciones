@@ -25,6 +25,7 @@ public class Pedido {
         } else {
             System.out.println("Ingredientes extras: " + ingredientesAdicionales);
         }
+        System.out.println(); // Salto de línea adicional
     }
 
     public static int getNumeroPedidos() {
