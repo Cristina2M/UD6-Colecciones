@@ -7,6 +7,7 @@ public class Pedido {
     private TipoComida tipoComida;
     private HashSet<String> ingredientesAdicionales;
 
+
     // CONSTRUCTOR
     public Pedido(TipoComida tipoComida) {
         numeroPedidos++;
@@ -15,6 +16,8 @@ public class Pedido {
         this.ingredientesAdicionales = new HashSet<>();
     }
 
+
+    
     //MÉTODOS
     public void agregarIngrediente(String ingrediente) {
         this.ingredientesAdicionales.add(ingrediente);// se van añadiendo los ingredientes
