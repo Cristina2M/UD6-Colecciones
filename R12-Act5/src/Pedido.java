@@ -32,9 +32,15 @@ public class Pedido {
         } else { // si contiene valores, los muestra
             System.out.println("Ingredientes extras: " + ingredientesAdicionales);
         }
-        System.out.println(); // Para añadir un salto de línea
+        System.out.println(); // Para añadir un salto de línea y que los pedidos salgan con un espacio de separación
     }
+/*
+    OTRA FORMA DE COMPROBAR QUE NO HAYA AÑADIDO NINGÚN INGREDIENTE EN UNA SOLA LÍNEA
 
+    
+
+
+*/
 
     public static int getNumeroPedidos() {
         return numeroPedidos;

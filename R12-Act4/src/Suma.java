@@ -7,6 +7,7 @@ import java.util.HashSet;
          Scanner entrada = new Scanner(System.in);
 
          HashSet<Integer> numeros = new HashSet<>();
+         int suma = 0;
  
          // Pedimos que escriban 5 números diferentes
          System.out.println("Ingresa 5 números diferentes:");
@@ -21,7 +22,7 @@ import java.util.HashSet;
          }
  
          // Calculamos la suma de los números
-         int suma = 0;
+
          for (int numero : numeros) { // recorro el hashset cogiendo cada valor dentro de numeros
              suma += numero; // lo mismo que suma=suma+numero, pero de forma abreviada
          }
