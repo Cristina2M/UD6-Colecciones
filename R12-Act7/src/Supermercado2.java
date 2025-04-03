@@ -53,11 +53,11 @@ public class Supermercado2 {
         double totalCompra = 0;
         for (String nombreProducto : compra.keySet()) {
             int cantidad = compra.get(nombreProducto);
-            double precioUnitario = productos.get(nombreProducto);
-            double precioTotalProducto = precioUnitario * cantidad;
+            double precioUnidad = productos.get(nombreProducto);
+            double precioTotalProducto = precioUnidad * cantidad;
             totalCompra += precioTotalProducto;
     
-            System.out.printf("%-8s %-6.2f %-8d %-6.2f\n", nombreProducto, precioUnitario, cantidad, precioTotalProducto);
+            System.out.printf("%-8s %-6.2f %-8d %-6.2f\n", nombreProducto, precioUnidad, cantidad, precioTotalProducto);
         }
     
         System.out.println("--------------------------------");
