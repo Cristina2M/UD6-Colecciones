@@ -26,6 +26,7 @@ public class Supermercado {
                 producto = scanner.nextLine().toLowerCase(); // Convertir a minúsculas para evitar errores
     
                 if (producto.equals("fin")) {
+                    System.out.println("");
                     break;
                 }
     
@@ -49,7 +50,7 @@ public class Supermercado {
                 double precioTotalProducto = precioUnitario * cantidad;
                 totalCompra += precioTotalProducto;
     
-                System.out.printf("%-8s %-6.2f %-8d %-6.2f\n", nombreProducto.toUpperCase(), precioUnitario, cantidad, precioTotalProducto);
+                System.out.printf("%-8s %-6.2f %-8d %-6.2f\n", nombreProducto, precioUnitario, cantidad, precioTotalProducto);
             }
     
             System.out.println("--------------------------------");
