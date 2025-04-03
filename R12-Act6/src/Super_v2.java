@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Super2 {
+public class Super_v2 {
 
     public static void main(String[] args) {
 
