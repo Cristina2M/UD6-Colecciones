@@ -37,9 +37,13 @@ public class Pedido {
 /*
     OTRA FORMA DE COMPROBAR QUE NO HAYA AÑADIDO NINGÚN INGREDIENTE EN UNA SOLA LÍNEA
 
-    
-
-
+    public void mostrarPedido() {
+        System.out.println("Pedido: " + tipoComida);
+        System.out.println("ID del pedido: " + numeroPedido);
+        System.out.println("Ingredientes extras: " + (ingredientesAdicionales.isEmpty() ? "Ninguno" : ingredientesAdicionales));
+    }
+LO QUE HACE ES QUE PREGUNTA SI INGREDIENTESADICIONALES ESTÁ VACÍO, SI ES TRUE, ESCRIBE LA PRIMERA OPCIÓN Y SI ES FASE ESCRIBE LA SEGUNDA OPCIÓN (LA QUE HAY DESPUÉS DE LOS :)
+UNICAMENTE DEVUELVE TRUE O FALSE, NO PUEDE DEVOLVER OTROS VALORES
 */
 
     public static int getNumeroPedidos() {
